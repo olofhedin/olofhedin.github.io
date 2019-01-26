@@ -1,0 +1,310 @@
+/* =============================================================================
+   HTML5 CSS Reset Minified - Eric Meyer
+   ========================================================================== */
+
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;vertical-align:baseline;background:transparent}
+
+/* =============================================================================
+   My CSS
+   ========================================================================== */
+/* ---- base ---- */
+
+
+html{
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  overflow: auto;
+  overflow-x: hidden;
+
+}
+body{
+  padding: 0;
+  -webkit-text-stroke: 1px rgba(100,100,100,0.2);
+  background-color: rgb(240,240,240);  
+}
+
+canvas{
+  display:flex;
+}
+
+#particles-js{
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(2, 2, 2, 1);
+    z-index: 9000;
+}
+
+.intro{
+  font-family: 'Space Mono', monospace;
+  color: rgba(255,255,255,0.9);
+  padding-top: 30vh;
+  height: 20vh;
+  padding-bottom: 71vh;
+  background: rgba(2, 2, 2, 1);
+
+}
+.portfolio{
+  color: black;
+  width: 90vw;
+  margin: 3em;
+  
+}
+
+.pres-header{
+  font-family: 'Space Mono', monospace;
+  color: black;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+.proj-header{
+  font-family: 'Space Mono', monospace;
+  color: black;
+  margin-bottom: 0.25em;
+}
+.pres-text{
+  color: #151515;
+}
+.proj-text{
+  color: #151515;
+}
+
+
+
+/* Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono');
+@import url('https://fonts.googleapis.com/css?family=Space+Mono');
+
+
+
+
+
+@media only screen and (min-width: 1100px){
+  .line-1 {
+      position: relative;
+      z-index: 9500;
+      top: 40%;  
+      width: 12em;
+      margin: 0 auto;
+      margin-bottom: 5vh;
+
+      border-right: 3px solid rgba(255,255,255,1);
+      font-size: 500%;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      transform: translateY(-50%);    
+      pointer-events:none;        
+  }
+}
+@media only screen and (max-width: 1100px) and (min-width: 650px){
+  .line-1 {
+    position: relative;
+    z-index: 9500;
+    top: 40%;  
+    width: 8em;
+    margin: 0 auto;
+    margin-bottom: 5vh;
+    border-right: 3px solid rgba(255,255,255,1);
+    font-size: 300%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+    pointer-events:none;        
+}
+}
+
+@media only screen and (max-width: 650px){
+  .line-1 {
+    position: relative;
+    z-index: 9500;
+    top: 40%;  
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 5vh;
+    border-right: 3px solid rgba(255,255,255,1);
+    font-size: 1.3em;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+    pointer-events:none;        
+  
+  }
+}
+
+#name-anim{
+  z-index: 9001;
+}
+@media only screen and (min-width: 1100px){
+  .icons-header{
+    z-index: 9001;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%); 
+    position: relative;
+      z-index: 9500;
+      top: 50%;  
+      margin: 0 auto;  
+      pointer-events:none;        
+
+  }
+  .icons-header .icon {
+    text-align: center;
+    color: #fff;
+    width: 80px;
+    height: 80px;
+    font-size: 55px;
+    padding: 10px;
+    margin: 2px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    transition: all .7s;
+    pointer-events:auto;
+  }
+
+  .icons-header .icon:active,
+  .icons-header .icon:hover {
+    color: #1a222c;
+    background: #fff
+  }
+  .fa {
+    padding: 50px;
+    font-size: 1000px;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+  } 
+}
+@media only screen and (max-width: 1100px) and (min-width: 650px){
+  .icons-header{
+    z-index: 9001;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%); 
+    position: relative;
+      z-index: 9500;
+      top: 50%;  
+      margin: 0 auto;  
+      pointer-events:none;        
+
+  }
+  .icons-header .icon {
+    text-align: center;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    font-size: 41.25px;
+    padding: 7.5px;
+    margin: 1.5px;
+    border-radius: 50%;
+    border: 1.5px solid #fff;
+    transition: all .7s;
+    pointer-events:auto;
+  }
+
+  .icons-header .icon:active,
+  .icons-header .icon:hover {
+    color: #1a222c;
+    background: #fff
+  }
+  .fa {
+    padding: 37.5px;
+    font-size: 750px;
+    width: 75px;
+    text-align: center;
+    text-decoration: none;
+  }
+}
+@media only screen and (max-width: 650px){
+  .icons-header{
+    z-index: 9001;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%); 
+    position: relative;
+      z-index: 9500;
+      top: 50%;  
+      margin: 0 auto;  
+      pointer-events:none;        
+
+  }
+  .icons-header .icon {
+    text-align: center;
+    color: #fff;
+    width: 2em;
+    height: 2em;
+    font-size: 1em;
+    padding: 5px;
+    margin: 2px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    transition: all .7s;
+    pointer-events:auto;
+  }
+
+  .icons-header .icon:active,
+  .icons-header .icon:hover {
+    color: #1a222c;
+    background: #fff
+  }
+  .fa {
+    padding: 50px;
+    font-size: 1000px;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+  }
+}
+
+@media only screen and (min-width: 1100px){
+
+  /* Animation */
+  .anim-typewriter{
+    animation: typewriter 2s steps(22) 1s 1 normal both,
+              blinkTextCursor 600ms steps(22) infinite normal;
+  }
+  @keyframes typewriter{
+    from{width: 0;}
+    to{width: 13em;}
+  }
+  @keyframes blinkTextCursor{
+    from{border-right-color: rgba(255,255,255,.9);}
+    to{border-right-color: transparent;}
+  }
+}
+
+@media only screen and (max-width: 1100px){
+
+  /* Animation */
+  .anim-typewriter{
+    animation: typewriter 2s steps(22) 1s 1 normal both,
+              blinkTextCursor 600ms steps(22) infinite normal;
+  }
+  @keyframes typewriter{
+    from{width: 0;}
+    to{width: 13em;}
+  }
+  @keyframes blinkTextCursor{
+    from{border-right-color: rgba(255,255,255,.9);}
+    to{border-right-color: transparent;}
+  }
+}
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
